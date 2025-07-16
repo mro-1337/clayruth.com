@@ -1,0 +1,570 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> <meta name="OPERATOR" content="Clayton E. Ruth (deceased)"> <meta name="Author" content="Clay Ruth(deceased)"> <meta name="GENERATOR" content="SHITTY Microsoft FrontPage 5.0">
+<title>Clay's Utilities(ARCHIVED)</title>
+</head>
+
+<a href="./claysutils32.zip"><img src=".\download.png" width="75"></a><br>
+<font color="yellow">
+Clayton E. Ruth is <a href="https://www.legacy.com/us/obituaries/nwitimes/name/clayton-ruth-obituary?id=18133266">deceased</a>. This is an archive of his website with a few changes.
+get the original site <a href="./oldsite/index.html">here </a> </font>
+<body bgcolor="gray" text="black" link="navy" vlink="blue" alink="navy">
+
+<p align="center"><a name="PageTop"></a><font size="6"><b> Clay's
+Utilities</b></font><font size="5"><b><i><br>
+for DOS Batch Processes</i></b></font> </p>
+
+<p><font color="black"><b><i>Last updated 17 January 2005</i></b></font></p>
+
+<p><font size="4"><b>Now Available:</b><br>
+NEW! </font><font size="4"><a href="./download32.html">Clay's Utilities for Win32, 
+Version 1.0 Beta 6</a> </font><font size="3">dated January 17, 2005 </font>(a 505K ZIP file download)<br>
+See the included <a href="./readme32.txt">ReadMe32.txt</a> file for descriptions of these
+utilities. Many are 32-bit, long-name-compatible versions of my previously released
+MS-DOS batch utilities, whereas others are unique to the Win32
+environment, such as timed message pop-ups and simple dialog
+boxes that you control from your batch script! A new Delayed Startup utility 
+allows you to delay the launch of selected Startup programs; see
+<a href="./readme32.txt">ReadMe32.txt</a> for details.</p>
+
+
+<body bgcolor="gray" text="black" link="cyan" vlink="blue" alink="navy">
+
+<p align="center"><font size="6"><b>Clay's Utilities</b></font><font
+size="5"><b><br>
+</b><em>for Win32</em></font></p>
+
+<p align="center"><font size="5"><b>=== LICENSE AGREEMENT ===</b></font></p>
+
+<p>Upon initiating the download of this package you agree to the
+following: </p>
+
+<p>The utilities included herewith are Copyright (C)1992-2005 by
+Clay Ruth, who reserves all rights of ownership. You are granted
+a license to use this software, free of charge, in a private or
+corporate environment, only for the purposes described in its
+documentation. You are also permitted to distribute this package,
+IN ITS ENTIRETY, INCLUDING THIS NOTICE, WITHOUT CHARGE TO THE
+RECIPIENT other than reimbursement for any media on which it is
+distributed and associated shipping costs. </p>
+
+<p>YOU MAY NOT distribute this package or any component thereof
+for profit, nor may you disassemble, reverse-engineer, or extract
+code from this software. </p>
+
+<p>All software in this package has been subjected to cursory
+testing and is believed to perform as described. However, it is
+still considered <b>BETA SOFTWARE</b>, even though the individual
+program modules do not identify themselves as such. Some
+anomalies can be expected, especially when using utilities that
+probe into subdirectories. Please <a
+href="data.html">E-mail the author</a> when you
+encounter problems with these utilities.</p>
+
+<p>All software in this package is certified to have been free of
+viruses, Trojans and other malicious code when originally
+distributed by the author. You, the user, are solely responsible
+for its usage, including, but not limited to, scanning for
+viruses and Trojans it may have acquired in the distribution
+channels, determining its suitability for the intended use,
+backing up all critical files before modifying them with it, and
+accepting any and all consequences of its use. NEITHER THE AUTHOR
+NOR THE DISTRIBUTOR IS RESPONSIBLE FOR ANY DAMAGES, DIRECT OR
+INDIRECT, CONSEQUENTIAL OR OTHERWISE, RESULTING FROM YOUR
+DECISION TO USE THIS SOFTWARE. YOU ACCEPT AND ASSUME ALL RISKS OF
+USE. </p>
+
+<p>Do you agree to be bound by the above terms?</p>
+
+<p align="center"><a href="claysutils32.zip"><img src=".\agree.gif"
+alt="I Agree" border="0" hspace="10" width="90" height="32"></a><a
+href="claysutl.html"><img src=".\disagree.gif" alt="I Disagree"
+border="0" hspace="10" width="90" height="32"></a></p>
+
+<p align="center"><a href="claysutl.html"><font size="2">Description&nbsp;of&nbsp;Utilities</font></a><font
+size="2"> | </font><a href="index.html"><font size="2">Clay's&nbsp;Home&nbsp;Page</font></a></p>
+
+
+
+<p>NOTE: Beta 6 upgrades Yank32, Xchang32, and Seek32 to eliminate a compiler 
+bug that affected command line parsing when the path to the utility contains a 
+blank space; also, these three utilities no longer attempt to read directories 
+as files. Previous Beta levels have added several new utilities, as detailed in
+<a href="./readme32.txt">ReadMe32.txt</a>.</p>
+
+<p><a href="./download.html"><font size="4">Clay's Utilities for MS-DOS,
+Version 1.3</font></a><font size="4"> </font><font size="3">dated
+January 14, 2000</font><font size="2"> </font>(a 400K ZIP file
+download)</p>
+
+<p><font color="black" size="4"><br><strong>UPDATES: </strong></font><font color="black" size="3">The patch files listed below are NOT
+cumulative. To obtain all of the utilities in their latest
+versions, you need the baseline Version 1.3 package plus each of
+the patches. I'll release a full package update whenever the
+quantity of patches becomes sufficient to justify it.</font></p>
+
+<p><a href="./cutpk13b.zip"><font white"black" size="4"><br><strong>Patch
+1.3b</strong></font></a><font color="black" size="4"><br><strong> </strong></font><font color="black" size="3">dated April 2, 2001 (a 24K ZIP file
+download)<br>
+This patch includes <br><strong>INIMOD 2.3</strong>, which has been
+modified to handle lengthy existing settings without leaving
+behind line fragments (maximum existing line length increased
+from 253 to 8189 characters), and <br><strong>INIREAD 3.2</strong>,
+which also has had its setting handling limits increased, from
+127 characters to 3711 characters.</font></p>
+
+<p><a href="./cutpk13a.zip"><font color="black" size="4"><br><strong>Patch
+1.3a</strong></font></a><font color="black" size="4"><br><strong> </strong></font><font color="black" size="3">dated November 11, 2000 (a 25K ZIP file
+download)<br>
+This patch includes <br><strong>FILEDATA 2.3</strong>, in which a bug
+affecting the use of a target file list has been fixed, and <br><strong>XCHANGE
+3.1</strong>, which now accepts an optional "/s" switch
+directing it to use simple strings (i.e., not to interpret the
+carat and comma characters as special).</font></p>
+
+<p><b>Summary of Changes Included in the Version 1.3 Package:</b><br>
+<br><strong>RENDATE 1.0</strong> - New utility to rename files with
+names that reflect dates (per their time stamps, current date, or
+any specified date).<br>
+
+<br><strong>FTIMECMP 1.0</strong> - New utility to compare two files'
+time stamps, returning an errorlevel code to indicate how much
+newer is one file compared to the other in your specified units.<br>
+
+<br><strong>REDATE 1.0</strong> - New utility to redate files
+intuitively (no silly switches!) Assumes U.S. date format.<br>
+<a href="./claysutl.html#Fileinfo"><br><strong>FILEINFO 2.2</strong></a><br><strong> </strong>and
+<a href="./claysutl.html#Filedata"><br><strong>FILEDATA 2.2</strong></a> - Improved
+the EXE header interpretation logic to avoid searching in vain
+for resources in those rare WinEXE files that have no resources
+at all. Added recognition of VxD files (.VXD, .386). Major
+performance improvement due to new search strategy that uses data
+in the Windows EXE header to rapidly and reliably locate the
+version info instead of doing a blind search. No false hits! The
+module's 16-bit or 32-bit status is always reported regardless of
+whether additional info is available. Fixed bug that affected
+primarily WinNT and OS/2 command prompt environments, in which
+some files that can be seen in the directory are not accessible
+to the user. The inaccessible file data was causing the next
+file's record to be appended to the inaccessible file's record
+instead of starting a new record. This now works correctly.<br>
+
+<br><strong>INTOR 1.0</strong> and<br><strong> INTAND 1.0</strong> - New
+utilities, comparable to <a href="./claysutl.html#IntAdd">INTADD</a>, except
+they perform a bitwise OR and bitwise AND, respectively, of the
+two arguments.<br>
+
+<br><strong>SYSSAVE 1.0</strong> - New utility to back up the FAT16 C:
+<br><strong>SYSSAVE 1.0</strong> - New utility to back up the FAT16 C:
+drive's critical system areas (boot record, FATs and root
+directory) as an aid to disaster recovery. Companion SYSBACK
+batch script uses SYSSAVE in combination with FILEAGE to perform
+periodic backups at any desired interval and with 1 to 35 levels
+of redundancy. FOR USE ON FAT16 C: DRIVE ONLY!<br>
+<br><strong>EXCL_OR 1.0</strong> - New utility to encode/decode files
+with a simple Exclusive-OR algorithm. This is for protection from
+casual snoopers only; it is not very secure.<br>
+<a href="./claysutl.html#LongAdd"><br><strong>LONGADD 1.0</strong></a> - New utility
+to add long integers (+ or - 2 gig).</p>
+
+<p><a href="./download.html"><font size="4">Download the current
+version</font></a><font size="4"> </font><font size="3">(400K ZIP
+file) of this unique package for FREE! Many users have told me I
+should be charging money for stuff that's this useful, but I'm
+still giving it away. This is a ZIP file containing numerous .COM
+and .EXE files (described briefly below), plus a couple of .TXT
+files for documentation and a couple of other files whose purpose
+is explained in the text files. You'll need </font><a href="http://www.pkware.com/"><font size="3">PKZip</font></a><font size="3">, </font><a href="http://www.winzip.com/"><font size="3">WinZip</font></a><font size="3"> or compatible utility to extract the contents from the
+ZIP file.</font></p>
+
+<p>Upon initiating the download of this package you agree to the
+following: </p>
+
+<p>The utilities included herewith are Copyright (C)1992-1999 by
+Clay Ruth, who reserves all rights of ownership. You are granted
+a license to use this software, free of charge, in a private or
+corporate environment, only for the purposes described in its
+documentation. You are also permitted to distribute this package,
+IN ITS ENTIRETY, INCLUDING THIS NOTICE, WITHOUT CHARGE TO THE
+RECIPIENT other than reimbursement for any media on which it is
+distributed and associated shipping costs. </p>
+
+<p>YOU MAY NOT distribute this package or any component thereof
+for profit, nor may you disassemble, reverse-engineer, or extract
+code from this software. </p>
+
+<p>All software in this package has been thoroughly tested and is
+believed to perform as described. It is certified to have been
+free of viruses, trojans and other malicious code when originally
+distributed by the author. You, the user, are solely responsible
+for its usage, including, but not limited to, scanning for
+viruses and trojans it may have acquired in the distribution
+channels, determining its suitability for the intended use,
+backing up all critical files before modifying them with it, and
+accepting any and all consequences of its use. NEITHER THE AUTHOR
+NOR THE DISTRIBUTOR IS RESPONSIBLE FOR ANY DAMAGES, DIRECT OR
+INDIRECT, CONSEQUENTIAL OR OTHERWISE, RESULTING FROM YOUR
+DECISION TO USE THIS SOFTWARE. YOU ACCEPT AND ASSUME ALL RISKS OF
+USE. </p>
+
+<p>All trademarks referenced herein are the properties of their
+respective owners. Their mention herein shall not be construed to
+infer any association with, endorsement by, or critique by this
+package or its author. </p>
+
+<p>To contact the author: <a href="./data.html">see my e-mail page</a>
+</p>
+
+<p>Below is a brief summary, in no particular order, of each
+utility. For more detailed information, <a href="./download.html">download
+the package</a> and view the README.TXT, README1.TXT, and README2.TXT
+files. Additional utilities, newly added, are briefly described
+in the <a href="./claysutl.html#PageTop">Summary of Changes</a> at the top of
+this page.</p>
+
+<p><a name="Tsr"></a><b>TSR.COM</b> - This is a dummy TSR that
+does nothing but consume DOS memory (conventional or upper). Use
+it to test the minimum memory requirement for running any DOS
+program of interest. Command line parameters allow you to
+specifiy the exact amount of memory to consume, from 192 bytes to
+just under 64K. To consume more than 64K, load multiple instances
+of this TSR. The last loaded instance can be adjusted in size
+after loading to fine-tune the remaining free memory. </p>
+
+<p><b>ISRUN.COM</b> - This utility reports whether a specified
+program is loaded in DOS memory and, when found, displays the
+addresses of its code (PSP) and environment data segments. It
+reports both TSRs and device drivers. An errorlevel code returns
+a logical flag to your batch script; this is most useful for
+determining whether your batch script is running under another
+process, such as a network LOGIN program, the RUNBAT$ utility,
+etc. </p>
+
+<p><a name="Fileinfo"></a><b>FILEINFO.EXE</b> - This DOS-based
+utility locates and displays official Windows File Information
+from any program module adhering to the "StringFileInfo"
+resource standard. The "File Version" returned in the
+FILEINFO report is the best authority as to which copy of a DLL
+file is actually the most up-to-date, regardless of what the date/time
+stamps say. Software vendors often redate the files included in
+their packages to reflect the date of package issue, causing
+obsolete DLLs to appear newer than they really are. FILEINFO can
+help set things straight. </p>
+
+<p><a name="Filedata"></a><b>FILEDATA.EXE</b> - This variant of <a href="./claysutl.html#Fileinfo">FILEINFO</a> produces its output in Comma
+Separated Values (CSV) format, suitable for importing into a
+database or spreadsheet. The first record contains field names.
+To facilitate the sorting and comparison of DLLs throughout your
+computer system, an empty database structure in Microsoft(TM)
+Access(TM) format is provided, complete with a "Comparison"
+query that sorts the essential information for you. The database
+was created in Access 2.0 and can be up-converted to a more
+recent format.</p>
+
+<p><a name="Xchange"></a><b>XCHANGE.EXE </b>- Extended global
+find-and-replace for any kind of file, of any size. This is
+suitable for use at the command prompt or in a batch file. It can
+even be used to patch code within an executable file, provided
+that the search and replace sequences contain the same quantity
+of bytes. All byte values, 0 through 255 (x00 through xFF), are
+supported. Lengthy search/replace string specifications can be
+placed in a script file, and an ASCII or binary image file can be
+used as a replacement (4K maximum script or image size). </p>
+
+<p><a name="xchange30"></a><br><strong>XCHANGE 3.0</strong>,
+available as of package release 1.2, recognizes the ZIP file
+format and can change the embedded path strings in such a manner
+that the PKZIPFIX utility (provided by <a href="http://www.pkware.com/">PKWare</a> with PKZIP 2.04g) can
+clean up the resulting ZIP file directory pointers. This works
+only if the first file name in the archive begins with the path
+you wish to change. </p>
+
+<p><b>YANK.EXE</b> - This is similar to <a href="./claysutl.html#Xchange">XCHANGE.EXE</a>
+with one important exception. Whereas XCHANGE removes/replaces
+only the sought text, YANK removes/replaces the <b>entire line</b>
+that contains the sought text. It "yanks" out the whole
+line, including the CR/LF at the end, substituting the
+replacement text string (or image file contents). </p>
+
+<p><b>LINEMOD.EXE</b> - Another variation on <a href="./claysutl.html#Xchange">XCHANGE</a>,
+LINEMOD changes only targeted lines, as identified by a unique
+identifier string. </p>
+
+<p><b>SEEK.EXE</b> - This handy alternative to the DOS FIND
+command is extremely useful to batch programmers who simply want
+to find out if something exists in a file. SEEK looks for the
+search string and returns an errorlevel code indicating whether
+or not it was found. SEEK handles binary files as well as ASCII
+files; the search string can contain control characters, graphics
+characters, CR/LF sequences, etc. - even nulls. </p>
+
+<p><b>SCANSTR.COM</b> - This program scans a <b>string</b> (not a
+file) to determine whether it contains a second specified string.
+Primarily useful for screening the content of environment
+variables, SCANSTR returns a message and errorlevel code
+indicating the relative position of the search string within the
+target string. If the search string is not found within the
+target string, the return code is zero. A return code of 1
+indicates that the search string begins at the first character of
+the target string; 2 indicates that it begins at the second
+character, etc. </p>
+
+<p><a name="Splitfil"></a><b>SPLITFIL.EXE</b> - Splits any file
+into two parts at the first occurrence of a search string (other
+than at the very beginning of the file), or at a specified size.
+It works with both text and binary files. Split files can be
+reassembled later, if necessary, with COPY /B file1+file2 (i.e.,
+the binary option of the DOS' built-in COPY command). </p>
+
+<p><a name="Ocopy"></a><b>OCOPY.EXE</b> - Overwrites a specified
+target file with a copy of a specified source file. This is a
+true overwriting file copier. Unlike COPY, which effectively
+deletes any existing file of the target name and re-creates the
+file in a new storage area, OCOPY ensures that the new file
+overwrites the existing file, using the same storage allocation.
+OCOPY copies any file, regardless of S, H, or R attributes, but
+does not pass along those attributes. If file2 exists, any "R"
+attribute must first be removed; it will be overwritten and its
+size and date/time stamp will be adjusted to match file1. If file2
+does not exist, it will be created. OCOPY incorporates Novell
+Netware functions to make network errors invisible to the user,
+and it has the unique ability to copy a file to a directory where
+the user has only the Write and Create permissions. Thus, as a
+network administrator, you can create a server-based directory
+where your login-time batch scripts, running on user PCs, can
+deposit data that only you can retrieve; ordinary users won't
+even see that any files are there. </p>
+
+<p><b>FILEAGE.EXE</b> - Determines the age of the specified file,
+in the specified units, and returns an errorlevel code equal to
+the quantity of time units elapsed since the file's modification
+date/time stamp. An optional parameter can specify units of
+seconds, minutes, hours, days, weeks, months, or years; the
+default units are days. The largest valid quantity returned by
+errorlevel is 250, but larger values may be displayed (returns
+nonfatal errorlevel 251). Errorlevels 252 through 255 are
+reserved for fatal errors. Use FILEAGE to schedule events, detect
+obsolete files, etc. </p>
+
+<p><b>SRCHDIR.COM</b> - Subdirectory search for specified file(s).
+SRCHDIR produces a list of all files matching the file
+specification in the base directory (i.e., current working
+directory, or other directory shown in the filespec) and all of
+its subdirectories. This list differs from that obtained by the
+DOS command "DIR filespec /s /b" in two ways: it
+includes each file's date/time stamp while omitting the usual DIR
+header and trailer, and it lists hidden files as well as normal
+files, including any that are in hidden subdirectories. An
+optional parameter can omit the subdirectory search. </p>
+
+<p><b>INVORALL.EXE</b> - File Inventory Utility with Multiple
+Seeks and Critical Error Trapping. INVORALL is an enhanced
+SRCHDIR that returns all file names that include any of the
+specified seek strings. In addition to the information returned
+by SRCHDIR, the file size (up to 2 GB) is appended to each line,
+and extremely long paths are handled gracefully by omitting the
+lowest subdirectory levels (substituting "\...\") and
+showing only what fits in the space. The maximum number of seek
+strings is limited only by the 127-character command line. This
+utility employs critical error trapping, so it can be used on a
+removable-media drive without triggering unwanted error messages.
+</p>
+
+<p><b>MAKEDIR.COM</b> and <b>REMOVDIR.COM</b> - These are non-complaining
+substitutes for the DOS "mkdir" or "md"
+command, and "rmdir" or "rd" command,
+respectively, suitable for use in batch files. MAKEDIR attempts
+to create the specified directory. If the directory already
+exists, its report of "Cannot create directory dirspec"
+is directed to STDOUT where it can be redirected to NUL or to a
+log file. Similarly, REMOVDIR attempts to remove the specified
+directory, and its report of being unable to do so is
+redirectable. </p>
+
+<p><b>DELFILE.COM</b> - Just as REMOVDIR gets rid of directories
+in a batch-friendly way, DELFILE gets rid of unwanted files. Its
+report, announcing whether or not the file was deleted, is
+redirectable. </p>
+
+<p><b>BIN2ASC.EXE</b> and <b>ASC2BIN.EXE</b> - This is a
+complementary pair of programs for converting binary files to
+ASCII files and back again. Some communication protocols,
+designed for use with ASCII files, cannot transfer binary files
+due to their interpretation of special characters within the data
+stream. BIN2ASC converts a binary file of size x to an ASCII file
+of size 2x that contains the hexadecimal ASCII representation of
+the binary values found in the original file. ASC2BIN converts
+such a file back to its original binary form. This method is not
+as space-efficient as UUENCODE, MIME, BinHex, etc., but it has
+the advantage of being eye-readable as to the ASCII codes being
+transmitted. </p>
+
+<p><a name="IntAdd"></a><b>INTADD.COM</b> - Integer Addition
+program suitable for use with decimal or hexadecimal values. The
+output is a "SET RESULT=sum" command printed to stdout,
+which can be redirected into a batch file and called to create
+the RESULT environment variable. The sum is formatted as either a
+four-digit hexadecimal value with leading zeros, or as a non-padded
+decimal value. The format of value1 determines the format of the
+sum. A leading "x" identifies the value as hexadecimal,
+but the output sum will not include an x. The input parameters
+are not case-sensitive. Permissible values are hexadecimal 0000
+to FFFF or decimal -32768 to 32767. Hexadecimal results of 8000
+through FFFF are considered to be "negative". The
+returned errorlevel code is 0 for positive result, 1 for
+negative, and 2 for syntax error. </p>
+
+<p><a name="LongAdd"></a><b>LONGADD.COM</b> - Long Integer
+Addition, similar to INTADD.COM as described above, except that
+the range of input and output values is hexadecimal 00000000 to
+FFFFFFFF or decimal -2147483648 to 2147483647, where hexadecimal
+values 80000000 to FFFFFFFF are considered negative. </p>
+
+<p><b>INPUT.COM</b> - Provides text input within a batch file,
+one line of up to 128 characters; user-entered text is appended
+to a specified file. </p>
+
+<p><b>TPAUSE.COM</b> - Timed Pause displays a user-specified
+prompt and accepts a single-keystroke response. If no key is
+pressed within the timeout interval, it terminates with zero
+errorlevel. Timeout may be from 1 second to 23 hours 59 minutes
+59 seconds, or infinite. Default timeout = 1 minute. Returns
+errorlevel code = position of keystroke within character list, 0
+= timed out. See (and execute) TPHELP.BAT for usage examples. </p>
+
+<p><b>TZSET.EXE</b> - Automatically sets the TZ environment
+variable to either CST6 or CST6CDT, depending on whether or not
+the current system date is between the first Sunday in April and
+the fourth Sunday in October. The central time zone is only a
+default; if you use it in another time zone, simply preset TZ to
+the base setting for your time zone (e.g., SET TZ=EST5) before
+invoking TZSET. It will then produce either the same setting or
+one with the proper "_DT" appended to it (e.g., SET TZ=EST5EDT).
+If the current TZ setting is undefined, or if its 2nd through 4th
+characters are not "ST" followed by a numeric
+character, the default CST zone is used. A confirmational message
+of the form ":: Setting TZ=CST6CDT" is issued to STDOUT.
+</p>
+
+<p><b>FINDALL.EXE</b> - An alternative to the DOS FIND command.
+By using wildcards in the filespec, multiple files may be
+searched with a single command, and the output is not dirtied up
+with the names of files being checked. </p>
+
+<p><b>LMORE.COM</b> - An alternative to the DOS MORE command. Use
+it in identical fashion. Although the DOS MORE command has
+improved in recent versions, it is still quite messy, especially
+when dealing with lines longer than 80 characters (i.e., lines
+that wrap around to display as multiple-line records). It has a
+bad habit of printing its "-- More --" prompt in the
+middle of a line and thoroughly messing up the display format of
+all remaining display lines of the affected record. LMORE is a
+line-based MORE that checks the length of each input record to
+ensure that it will fit on the current screenful before
+displaying it. If the entire record cannot fit on the screen, the
+"-- More --" prompt appears in the position that the
+first line would occupy. When a key is pressed, it backspaces
+over its prompt, overwrites the prompt with spaces, then
+backspaces over it again so that the display can continue in
+uninterrupted fashion. If the keystroke is Esc or Ctrl-C, the
+process is aborted. </p>
+
+<p><b>INIMOD.EXE</b> - This utility allows you to add, delete, or
+modify settings within specific sections of Windows-style .INI
+files. </p>
+
+<p><b>INIREAD.EXE</b> - This .INI file interpreter for batch
+files allows you to capture any desired setting, from any
+section, in the environment variable you name. If the parameter
+is found in multiple lines of the same section (e.g., "device="
+in the [386Enh] section of SYSTEM.INI), the first occurrence will
+be returned in the specified variable, and the subsequent
+occurrences will be returned in variables having similar names
+with numerical suffixes 2 through n, where n is the number of
+occurrences found. </p>
+
+<p><a name="Runbat$Exe"></a><b>RUNBAT$.EXE</b> - This is a batch
+file launcher for use within a user's Novell network login script.
+It looks up the COMSPEC environment variable and calls whatever
+is referenced therein (i.e., the fully qualified path to the
+command line processor), passing it parameters requesting a 5K
+space for environment variables (/E:5120) and command execution
+(/C) plus whatever parameters (maximum quantity of 9) are
+included on the RUNBAT$ command line. </p>
+
+<p><a name="Runbat$Com"></a><b>RUNBAT$.COM</b> - Used in the same
+manner described above for <a href="./claysutl.html#Runbat$Exe">RUNBAT$.EXE</a>,
+RUNBAT$.COM runs COMMAND.COM as a child process instead of
+letting it overlay RUNBAT$.COM in memory. This has an impact of
+approximately 15K on the conventional DOS memory available to the
+launched batch process. However, this makes it compatible with
+Windows 95B and later in addition to remaining compatible with MS-DOS
+versions 3.0 through 6.22. </p>
+
+<p><b>ENVMASTR.EXE</b> - When you use the SET command while
+shelled out from an application, it sees only the local
+environment of the shell. ENVMASTR lets you work in the master
+environment that was created when the system was booted, and/or
+any subordinate environments. This is especially useful when
+using RUNBAT$ to execute a batch whose environment manipulation
+is expected to stick to the command environment from which
+RUNBAT$ was executed. The batch can either make all environment
+changes through ENVMASTR, or make them locally and then use
+ENVMASTR to copy the modified environment into the master. A
+display-only option lets you view the content of any environment
+space, complete with a report of the environment size, bytes used
+and bytes free. </p>
+
+<p><b>NRTS.EXE</b> - This is a utility for testing a user's
+rights in a specified Novell server volume subdirectory. It works
+with Novell Netware 3.11 and MS-DOS 5.0. </p>
+
+<p><b>HIDE.COM</b> and <b>UNHIDE.COM</b> - This is the easy way
+to hide and unhide files and directories! Similar capability is
+available in DOS 5.0 and higher via the ATTRIB command, but
+ATTRIB is awkward to use with all of its parameters, and it
+complains when it can't find the file or is restricted by the
+status of unspecified attributes. Since HIDE and UNHIDE produce
+no display under any conditions, you can use them in your batch
+program without regard for whether or not such a file exists or
+has various other attributes. </p>
+
+<p><b>SETRO.COM</b> and <b>SETSHR.COM</b> - Like HIDE and UNHIDE,
+SETRO and SETSHR provide a quick and easy way to set the Read-Only
+attribute (SETRO) or the System, Hidden, and Read-Only attributes
+(SETSHR) in your batch files. </p>
+
+<p><b>BIOSVER.COM</b> and <b>VIDVER.COM</b> - These utilities
+capture the version identification strings from the system BIOS
+ROMs and the VGA ROM extension, respectively. </p>
+
+<p><b>EXTMEM.COM</b> - This utility reads the CMOS to determine
+how much extended memory is present on the system. It returns a
+string that can be redirected to a log file as part of a system
+inventory script. </p>
+
+<p><b>DAYOFWK.COM</b> - Returns an errorlevel code corresponding
+to the current day of week, where 1=Sunday, 2=Monday, etc.,
+through 7=Saturday. Visual output reports the errorlevel returned
+and the day of week (3-character abbreviation); e.g., "3=Tue".
+This output may be redirected to a file, NUL, or other device.
+Use DAYOFWK in batch files to control processes that should be
+performed only on certain days of the week. </p>
+
+<p align="left"><a name="Fixtime"></a><b>FIXTIME.COM</b> - Resets
+the DOS clock to match the real-time clock. This is handy when
+certain notebook PCs wake up from suspended operation and still
+show a DOS time setting from when they were initially suspended.
+The real-time clock has continued running, but DOS was asleep and
+doesn't know that any time has passed! A simple FIXTIME command
+will bring DOS back to reality. This can also be used
+periodically on systems that run continuously on an extended
+basis, to correct DOS's inherent time drift. Although documented,
+version 1.0 of this utility was inadvertently omitted from
+package releases 1.0 through 1.2. Version 1.0 fixed only the time
+of day; if the PC had been asleep overnight its DOS date would
+remain incorrect. Version 2.0 fixes both the date and the time of
+day.</p>
+
+<p align="center"><a href="./download.html"><font size="2">Download</font></a><font size="2"> | </font><a href="./claysutl.html#PageTop"><font size="2">Top of This
+Page</font></a><font size="2"> | </font><a href="./index.html"><font size="2">Clay's Home Page</font></a> </p>
+</body>
+</html>
